@@ -34,11 +34,6 @@ t.test(x=suscoil$PSI,
        alternative="two.sided"
        )
 
-t.test(x=suscoil$PSI,
-       mu=1500,
-       alternative="two.sided"
-)
-
 t.test(subset(suscoil,Manufacturing_Lot =="Lot1")$PSI,mu = 1500)
 t.test(subset(suscoil,Manufacturing_Lot =="Lot2")$PSI,mu = 1500)
 t.test(subset(suscoil,Manufacturing_Lot =="Lot3")$PSI,mu = 1500)
